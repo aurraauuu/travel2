@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery of PrimeWey Travel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="gallery/gallery.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!--nav-->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" width="40px" height="auto">
+      <a class="navbar-brand" href="#">PrimeWay Travel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Tour
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="indonesia.html">Indonesia</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="jepang.html">Jepang</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="thailand.html">Thailand</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="turki.html">Turki</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="macau.html">Macau</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="yunani.html">Yunani</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Other
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+              <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="Sosmed.html">Sosmed</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+    <section class="slider-container">
+        <div class="slider-image">
+            <div class="slider-img">
+                <img src="gallery/bg1.jpg" alt="indonesia">
+                <h1>Indonesia</h1>
+                <div class="detail">
+                    <h2>Indonesia</h2>
+                    <p>Tour to Indonesia</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="gallery/bg2.jpg" alt="Jepang">
+                <h1>Jepang</h1>
+                <div class="detail">
+                    <h2>Jepang</h2>
+                    <p>Tour to Jepang</p>
+                </div>
+            </div>
+            <div class="slider-img ">
+                <img src="gallery/bg3.jpg" alt="Macau">
+                <h1>Macau</h1>
+                <div class="detail">
+                    <h2>Macau</h2>
+                    <p>Tour to Macau</p>
+                </div>
+            </div>
+            <div class="slider-img active">
+                <img src="gallery/bg.jpg" alt="bg">
+                <h1>Welcome</h1>
+                <div class="detail">
+                    <h2>Welcome</h2>
+                    <p>come and order tour </p>
+                </div>
+            </div>
+            <div class="slider-img ">
+                <img src="gallery/bg4.jpg" alt="Turki">
+                <h1>Turki</h1>
+                <div class="detail">
+                    <h2>Turki</h2>
+                    <p>Tour to Turki</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="gallery/bg5.jpg" alt="Yunani">
+                <h1>Yunani</h1>
+                <div class="detail">
+                    <h2>Yunani</h2>
+                    <p>Tour to Yunani</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="gallery/bg6.jpg" alt="Thailand">
+                <h1>Thailand</h1>
+                <div class="detail">
+                    <h2>Thailand</h2>
+                    <p>Tour to Thailand</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+<footer style="background-color: #2a2a2a; color: white; padding: 20px;">
+  <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap;">
+      <div style="flex: 1; min-width: 200px; padding: 10px;">
+          <h4 style="font-size: 14px; margin-bottom: 10px;">Contact</h4>
+          <ul style="list-style: none; padding: 0;">
+              <li style="margin-bottom: 5px;">Features</li>
+              <li style="margin-bottom: 5px;">Pricing</li>
+              <li style="margin-bottom: 5px;">FAQs</li>
+              <li style="margin-bottom: 5px;">About</li>
+          </ul>
+      </div>
+      <div style="flex: 1; min-width: 200px; padding: 10px;">
+          <h4 style="font-size: 14px; margin-bottom: 10px;">Section</h4>
+          <ul style="list-style: none; padding: 0;">
+              <li style="margin-bottom: 5px;">Home</li>
+              <li style="margin-bottom: 5px;">Features</li>
+              <li style="margin-bottom: 5px;">Pricing</li>
+              <li style="margin-bottom: 5px;">FAQs</li>
+              <li style="margin-bottom: 5px;">About</li>
+          </ul>
+      </div>
+      <div style="flex: 1; min-width: 200px; padding: 10px;">
+          <h4 style="font-size: 14px; margin-bottom: 10px;">Section</h4>
+          <ul style="list-style: none; padding: 0;">
+              <li style="margin-bottom: 5px;">Home</li>
+              <li style="margin-bottom: 5px;">Features</li>
+              <li style="margin-bottom: 5px;">Pricing</li>
+              <li style="margin-bottom: 5px;">FAQs</li>
+              <li style="margin-bottom: 5px;">About</li>
+          </ul>
+      </div>
+      <div style="flex: 2; min-width: 200px; padding: 10px;">
+          <h4 style="font-size: 14px; margin-bottom: 10px;">Subscribe to our newsletter</h4>
+          <p style="font-size: 12px; margin-bottom: 10px;">Monthly digest of 2024 Company, Inc. All rights reserved. what's new and exciting from us.</p>
+          <div style="display: flex;">
+              <button style="background-color: #dc3545; color: white; border: none; padding: 8px 15px; border-radius: 4px; font-size: 12px;">Subscribe</button>
+          </div>
+      </div>
+  </div>
+  <div style="text-align: center; margin-top: 20px;">
+      <hr style="border-color: #666;">
+      <p style="font-size: 12px;">© 2024 Company, Inc. All rights reserved.</p>
+  </div>
+</footer>
+
+    <script src="app.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $('.slider-img').on('click', function() {
+                $('.slider-img').removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+    </script>
+</body>
+</html>
